@@ -19,6 +19,9 @@ def home(request):
     lst = list(range(6, 15))
     return render(request, 'generator/home.html', {'lst': lst})
 
+def about(request):
+    return render(request, 'generator/about.html')
+
 def password(request):
     char = [chr(i) for i in range(97, 123)]
 
